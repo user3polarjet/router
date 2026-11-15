@@ -1,0 +1,25 @@
+[package]
+name = "archer_c6"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "archer_c6"
+path = "src/lib.rs"
+
+[dependencies]
+aes = "0.8"
+anyhow = "1.0.104"
+base64 = "0.23.1"
+cbc = { version = "0.1", features = ["alloc"] }
+clap = { version = "4.6.7", features = ["derive", "env"] }
+hex = "0.4.3"
+md-5 = "0.10"
+rand = "0.8"
+reqwest = "0.13.5"
+rsa = "0.9"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+tokio = { version = "1.54.1", features = ["rt-multi-thread", "macros", "time", "signal"] }
+toml = "1.2.1"
+urlencoding = "2.1.3"
